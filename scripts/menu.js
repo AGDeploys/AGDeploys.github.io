@@ -19,6 +19,8 @@ menuItems.forEach((element)=>{
         navLink.href = `../${element.href}`;
     }else if(amIPages==="index.html" && element.href !== "index.html"){
         navLink.href = `/pages/${element.href}`;
+    }else if(amIPages==="index.html" && element.href == "index.html"){
+        navLink.href = `/pages/${element.href}`;
     }else{
         navLink.href = element.href;
     }
