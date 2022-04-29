@@ -1,0 +1,65 @@
+body .label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-bottom: 15px;
+}
+body .label-float input {
+  border: 0;
+  border-bottom: 2px solid rgb(204, 196, 196);
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body .label-float input:focus {
+  border-bottom: 2px solid #3951b2;
+}
+body .label-float input::placeholder {
+  color: transparent;
+}
+body .label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}
+body .label-float input:required:invalid + label {
+  color: red;
+}
+body .label-float input:focus:required:invalid {
+  border-bottom: 2px solid red;
+}
+body .label-float input:required:invalid + label:before {
+  content: "*";
+}
+body .label-float input:focus + label,
+body .label-float input:not(:placeholder-shown) + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #8f8787;
+}
+
+body select#edit-patientName {
+  padding: 10px 5px 10px 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border-top-color: rgb(234, 238, 241);
+  border-right-color: rgb(234, 249, 250);
+  border-bottom-color: rgb(234, 249, 250);
+  border-left-color: rgb(234, 249, 250);
+}
+body div.container-scroller div.container-fluid.page-body-wrapper div.main-panel div.content-wrapper div.row {
+  justify-content: center;
+}
+body div.container-scroller div.container-fluid.page-body-wrapper div.main-panel div.content-wrapper div.row div.col-lg-6.grid-margin.stretch-card {
+  flex: content;
+  max-width: 100%;
+}

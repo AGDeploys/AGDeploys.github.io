@@ -1,0 +1,28 @@
+@import 'floating-label.scss';
+
+body{
+    select#edit-patientName{
+        padding: 10px 5px 10px 10px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        border-top-color: rgb(234, 238, 241);
+        border-right-color: rgb(234, 249, 250);
+        border-bottom-color: rgb(234, 249, 250);
+        border-left-color: rgb(234, 249, 250);
+    }
+    div.container-scroller{
+        div.container-fluid.page-body-wrapper{
+            div.main-panel{
+                div.content-wrapper{
+                    div.row{
+                        justify-content: center;
+                        div.col-lg-6.grid-margin.stretch-card{
+                            flex: content;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

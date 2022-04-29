@@ -1,0 +1,41 @@
+body{
+    div#addModal{
+        div.patient-data{
+            margin-bottom: 15px;
+        }
+    }
+    div#editModal{
+        div.patient-data{
+            margin-bottom: 15px;
+        }
+    }
+    div.container-scroller{
+        div.card-body{
+            div.card-body-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                button{
+                    padding: 13px 15px;
+                    
+                }
+            }
+            div.table-responsive{
+                table{
+                    tbody{
+                        tr{
+                            td.buttons{
+                                i{
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
